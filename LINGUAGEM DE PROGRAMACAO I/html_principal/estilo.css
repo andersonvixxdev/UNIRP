@@ -1,0 +1,73 @@
+/* CSS - CASCADING STYLE SHEET  - FOLHAS DE ESTILO EM CASCATA
+FORMAS DE USAR CSS
+
+SELETOR (ATRIBUTO: VALOR) { PROPRIEDADE: VALOR; }
+
+ */
+
+	/* SELETOR DE TAG */
+	p{
+		color: blue
+	}
+	/* SELETOR DE SPAN */
+
+	span, h1{
+		color: red
+	}
+	/* SELETOR DE BADY
+	body{
+		background-color: black;
+		font-family: Arial, sans-serif;
+	}
+	*/
+	/* SELETOR DE CLASSE */
+	.teste{
+		color: green;
+		font-size: 20px;
+		}
+
+	/* SELETOR DE ID */
+	#teste{
+		color: rgb(9, 225, 146);
+		opacity: 0.8;
+	}
+
+	/*  TAG E CLASSE */
+	p.teste{
+		color: purple;
+	}
+
+	/* ESTILO
+	body{
+		color: white;
+		font-family: Arial, sans-serif;
+		background-image: url("logo.png");
+		background-size: cover;
+	}
+	*/
+
+	/*
+	.quadrado{
+		background-color: red;
+		width: 300px;
+		height: 300px;
+		display: flex;
+		position: absolute;
+		left: 50%;
+		top: 20px;
+	}
+*/
+
+	.quadrado{
+		background-color: red;
+		width: 300px;
+		height: 300px;
+		display: flex;
+		position: sticky;
+
+		top: 20px;
+	}
+
+
+
+
