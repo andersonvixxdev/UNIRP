@@ -1,0 +1,52 @@
+@model Calculadora
+
+<div class="container mt-4">
+	<div class="card shadow-sm">
+		<div class="card-body">
+			<h2 class="mb-4">Calculadora</h2>
+
+			<form asp-action="Calcular" method="post">
+				<div asp-validation-summary="ModelOnly" class="alert alert-danger" role="alert"></div>
+
+				<div class="mb-3">
+					<label asp-for="Numero1" class="form-label">Primeiro número</label>
+					<input asp-for="Numero1" class="form-control" type="number" step="any"
+						   placeholder="Digite o primeiro número" required />
+					<span asp-validation-for="Numero1" class="text-danger small"></span>
+				</div>
+
+				<div class="mb-3">
+					<label asp-for="Numero2" class="form-label">Segundo número</label>
+					<input asp-for="Numero2" class="form-control" type="number" step="any"
+						   placeholder="Digite o segundo número" required />
+					<span asp-validation-for="Numero2" class="text-danger small"></span>
+				</div>
+
+				<div class="d-flex flex-wrap gap-2 mb-3">
+					<button type="submit" name="Operacao" value="somar" class="btn btn-primary">Somar</button>
+					<button type="submit" name="Operacao" value="subtrair" class="btn btn-primary">Subtrair</button>
+					<button type="submit" name="Operacao" value="multiplicar"
+							class="btn btn-primary">Multiplicar</button>
+					<button type="submit" name="Operacao" value="dividir" class="btn btn-primary">Dividir</button>
+				</div>
+			</form>
+
+			@if (!string.IsNullOrWhiteSpace(Model.MensagemResultado))
+			{
+				<div class="alert alert-success mt-4" role="alert">
+					@Model.MensagemResultado
+				</div>
+
+				<script>
+								window.addEventListener('load', function () {
+									alert('@Model.MensagemResultado');
+								});
+				</script>
+			}
+		</div>
+	</div>
+</div>
+
+@section Scripts {
+	<partial name="_ValidationScriptsPartial" />
+}

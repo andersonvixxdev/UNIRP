@@ -1,0 +1,27 @@
+@model Cambio
+<form asp-action="Calcular" method="post">
+    <div class="form-group">
+        <label class="form-label" asp-for="ValorInicial">Valor</label>
+        <input class="form-control text-center" asp-for="ValorInicial" placeholder="Digite o valor em reais">
+        <span class="small text-danger" asp-validation-for="ValorInicial"></span>
+    </div>
+    <label class="form-label mt-2">Moeda</label><br>
+    <div class="btn-group">
+        <input type="radio" id="dolar" asp-for="TaxaCambio" class="btn-check" value="5,10" checked>
+        <label class="btn btn-outline-primary" for="dolar">DÓLAR</label>
+        <input type="radio" id="euro" asp-for="TaxaCambio" class="btn-check" value="5,93">
+        <label class="btn btn-outline-primary" for="euro">EURO</label>
+        <input type="radio" id="libra" asp-for="TaxaCambio" class="btn-check" value="6,90">
+        <label class="btn btn-outline-primary" for="libra">LIBRA</label>
+    </div>
+    <div class="d-grid gap-2 mt-4">
+        <button class="btn btn-primary">CALCULAR</button>
+    </div>
+</form>
+@* COMENTÁRIO *@
+@if (Model.ValorFinal > 0)
+{
+    <div class="alert alert-primary mt-4">
+        <b>Valor convertido: </b>@Model.ValorFinal.ToString("F")
+    </div>
+}

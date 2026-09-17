@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOTSTRAP</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+
+<body>
+    <div class="container-fluid bg-info">
+        TEXTO COMUM<br>
+    </div>
+    <span class="text-danger">VERMELHO</span><br><br>
+    <div class="container">
+        <button type="button" class="btn btn-primary btn-sm">BOTAO</button><br><br>
+        <button type="button" class="btn btn-primary btn-md">BOTAO</button><br><br>
+        <button type="button" class="btn btn-primary btn-lg">BOTAO</button>
+    </div><br>
+    <div class="container">
+        <div class="row">
+            <div class="col bg-primary text-white">01</div>
+            <div class="col-8 bg-warning text-white">02</div>
+        </div>
+    </div><br>
+    <div class="container text-white bg-primary mb-2 p-2">01</div>
+    <div class="container text-white bg-primary">02</div>
+    <br>
+    <a href="" class="link-danger">LINK VERMELHO</a><br>
+    <div class="text-start">ESQUERDA</div>
+    <div class="text-center">CENTRO</div>
+    <div class="text-end">DIREITA</div><br>
+    <img src="cachorro.jpg" class="img-thumbnail mx-auto d-block"><br>
+    <table class="table table-success table-bordered table-hover table-striped">
+        <tr>
+            <td>VALOR</td>
+            <td>VALOR</td>
+        </tr>
+        <tr>
+            <td>VALOR</td>
+            <td>VALOR</td>
+        </tr>
+        <tr>
+            <td>VALOR</td>
+            <td>VALOR</td>
+        </tr>
+    </table>
+    <script src="js/bootstrap.bundle.js"></script>
+    <div class="container pb-4">
+        <form>
+            <label class="form-label">CAMPO</label>
+            <input type="text" class="form-control text-center">
+            <div class="form-floating my-4">
+                <input type="text" class="form-control">
+                <label class="form-label">CAMPO FLUTUANTE</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" value="1" class="form-check-input" checked>
+                <label class="form-check-label">OPÇÃO 1</label>
+            </div>
+            <div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" name="sexo">
+                    <label class="form-check-label">FEMININO</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" name="sexo">
+                    <label class="form-check-label">MASCULINO</label>
+                </div>
+            </div>
+            <div class="form-check form-check-inline">
+                <input type="radio" class="form-check-input" name="sangue">
+                <label class="form-check-label">A</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input type="radio" class="form-check-input" name="sangue">
+                <label class="form-check-label">B</label>
+            </div>
+            <div class="form-check form-switch">
+                <input type="checkbox" value="1" class="form-check-input">
+            </div>
+            <div>
+                <div class="btn-group">
+                    <input type="checkbox" class="btn-check" value="1" id="b1">
+                    <label for="b1" class="btn btn-outline-primary">01</label>
+                    <input type="checkbox" class="btn-check" value="1" id="b2">
+                    <label for="b2" class="btn btn-outline-primary">02</label>
+                    <input type="checkbox" class="btn-check" value="1" id="b3">
+                    <label for="b3" class="btn btn-outline-primary">03</label>
+                </div>
+            </div>
+            <select class="form-select my-4">
+                <option value="1">01</option>
+                <option value="2">02</option>
+                <option value="3">03</option>
+            </select>
+            <button type="button" class="btn btn-primary">BOTÃO AZUL</button>
+            <div class="d-grid gap-2 my-4">
+                <button type="button" class="btn btn-primary">BOTÃO TELA INTEIRA</button>
+            </div>
+            <button type="button" class="btn btn-link mt-4">BOTÃO LINK</button><br>
+            <button type="button" class="btn btn-outline-primary">BOTÃO OUTLINE</button><br>
+            <button type="button" class="btn btn-primary mx-auto d-block">BOTÃO CENTRALIZADO</button><br>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary">01</button>
+                <button type="button" class="btn btn-primary">01</button>
+                <button type="button" class="btn btn-primary">01</button>
+            </div><br>
+            <div class="input-group mt-4">
+                <span class="input-group-text">RÓTULO</span>
+                <input type="text" class="form-control">
+                <button type="button" class="btn btn-primary">ENVIAR</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
